@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
+$font-family-sans-serif: "Sora", sans-serif;
+// navigation bar section styling start
+
+.nav-item {
+  .nav-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
+.resume-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 22px;
+  background: #000;
+  border-radius: 5px;
+  .resume {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+// bootstrap node modules
+@import "../node_modules/bootstrap/scss/bootstrap";
