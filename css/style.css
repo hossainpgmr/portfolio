@@ -96,13 +96,14 @@
   padding: 42px;
   margin-top: 42px;
 }
-.skills-section h3, .skills-section .h3 {
+.skills-section .similar-heading {
+  color: #000;
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
   text-align: center;
 }
-.skills-section h3 span, .skills-section .h3 span {
+.skills-section .similar-heading span {
   font-weight: bold;
 }
 .skills-section .skill-items {
@@ -136,6 +137,62 @@
   background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out;
+}
+
+.experience-section {
+  background: #000;
+  color: #d4d4d8;
+  padding: 42px 0;
+  margin-top: 52px;
+}
+.experience-section .experience-items {
+  padding: 42px;
+}
+.experience-section .experience-items .similar-heading {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+}
+.experience-section .experience-items .similar-heading span {
+  font-weight: bold;
+}
+.experience-section .experience-items .experience-org {
+  margin-top: 42px;
+  padding: 22px;
+  border: 1px solid #71717a;
+  border-radius: 10px;
+}
+.experience-section .experience-items .experience-org .org-headings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.experience-section .experience-items .experience-org .org-headings .org-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.experience-section .experience-items .experience-org .org-headings .org-heading img {
+  width: 32px;
+}
+.experience-section .experience-items .experience-org .org-headings .org-heading h3, .experience-section .experience-items .experience-org .org-headings .org-heading .h3 {
+  color: #fff;
+}
+.experience-section .experience-items .experience-org.para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.experience-section .experience-items .experience-org:hover {
+  border: 0;
+  outline: none;
+  background: #27272a;
+  color: #d4d4d8;
+  transition: all 0.2s ease-in-out;
+  border: #27272a 1px solid;
 }
 
 /*!

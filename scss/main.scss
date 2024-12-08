@@ -8,6 +8,45 @@ $font-family-sans-serif: "Sora", sans-serif;
     text-decoration: none;
   }
 }
+// variables
+@mixin dark-heading {
+  color: #000;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  span {
+    font-weight: bold;
+  }
+}
+@mixin light-heading {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  span {
+    font-weight: bold;
+  }
+}
+@mixin dark-hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+@mixin light-hover {
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease-in-out;
+}
+@mixin dark-shadow-hover {
+  border: 0;
+  outline: none;
+  background: #27272a;
+  color: #d4d4d8;
+  transition: all 0.2s ease-in-out;
+  border: #27272a 1px solid;
+}
 // navigation bar section styling start
 .nav-section {
   padding: 8px 24px;
@@ -100,14 +139,8 @@ $font-family-sans-serif: "Sora", sans-serif;
 .skills-section {
   padding: 42px;
   margin-top: 42px;
-  h3 {
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 56px;
-    text-align: center;
-    span {
-      font-weight: bold;
-    }
+  .similar-heading {
+    @include dark-heading;
   }
   .skill-items {
     margin-top: 72px;
@@ -136,9 +169,51 @@ $font-family-sans-serif: "Sora", sans-serif;
       margin-top: 32px;
     }
     &:hover {
-      background: #000;
-      color: #fff;
-      transition: all 0.2s ease-in-out;
+      @include dark-hover;
+    }
+  }
+}
+// experience section area styling
+.experience-section {
+  background: #000;
+  color: #d4d4d8;
+  padding: 42px 0;
+  margin-top: 52px;
+  .experience-items {
+    padding: 42px;
+    .similar-heading {
+      @include light-heading;
+    }
+    .experience-org {
+      margin-top: 42px;
+      padding: 22px;
+      border: 1px solid #71717a;
+      border-radius: 10px;
+      .org-headings {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        .org-heading {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 32px;
+          img {
+            width: 32px;
+          }
+          & h3 {
+            color: #fff;
+          }
+        }
+      }
+      &.para {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &:hover {
+        @include dark-shadow-hover;
+      }
     }
   }
 }
