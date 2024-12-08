@@ -220,6 +220,49 @@
   line-height: 24px;
 }
 
+.project-section {
+  width: 100vw;
+  margin-top: 32px;
+  padding: 42px 0;
+  background: #000;
+  color: #71717a;
+}
+.project-section .project-items h3, .project-section .project-items .h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  padding: 16px 0;
+}
+.project-section .project-items h3 span, .project-section .project-items .h3 span {
+  font-weight: bold;
+}
+.project-section .project-items .project-item {
+  margin-top: 32px;
+  display: flex;
+  gap: 72px;
+  align-items: center;
+}
+.project-section .project-items .project-item .text-area span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+}
+.project-section .project-items .project-item .text-area h3, .project-section .project-items .project-item .text-area .h3 {
+  margin: 16px 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+.project-section .project-items .project-item .text-area img {
+  width: 20px;
+  height: 20px;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

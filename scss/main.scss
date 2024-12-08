@@ -237,6 +237,46 @@ $font-family-sans-serif: "Sora", sans-serif;
     }
   }
 }
+// project section styling
+.project-section {
+  width: 100vw;
+  margin-top: 32px;
+  padding: 42px 0;
+  background: #000;
+  color: #71717a;
+  .project-items {
+    h3 {
+      @include light-heading;
+      padding: 16px 0;
+    }
+    .project-item {
+      margin-top: 32px;
+      display: flex;
+      gap: 72px;
+      align-items: center;
+      & .text-area {
+        span {
+          color: #fff;
+          font-size: 48px;
+          font-weight: 800;
+          line-height: 56px;
+        }
+        & h3 {
+          margin: 16px 0;
+          color: #fff;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+          text-align: left;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
 
 // bootstrap node modules
 @import "../node_modules/bootstrap/scss/bootstrap";
