@@ -342,5 +342,17 @@ $font-family-sans-serif: "Sora", sans-serif;
     }
   }
 }
+// footer section styling
+footer {
+  margin-top: 32px;
+  padding: 32px 0 24px 0;
+  background: #000;
+  color: #fff;
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 // bootstrap node modules
 @import "../node_modules/bootstrap/scss/bootstrap";

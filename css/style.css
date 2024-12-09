@@ -325,7 +325,7 @@
 .testmonial-section .testmonial-cards .card-item .designer-name h4, .testmonial-section .testmonial-cards .card-item .designer-name .h4 {
   margin: 16px 0;
   color: #404040;
-  font-size: 20cpx;
+  font-size: 20px;
   font-weight: 600;
   line-height: 28px;
 }
@@ -334,6 +334,18 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+}
+
+footer {
+  margin-top: 32px;
+  padding: 32px 0 24px 0;
+  background: #000;
+  color: #fff;
+}
+footer .footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*!
