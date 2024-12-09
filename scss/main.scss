@@ -49,6 +49,13 @@ $font-family-sans-serif: "Sora", sans-serif;
   transition: all 0.2s ease-in-out;
   border: #27272a 1px solid;
 }
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: #000 1.5px;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
 // navigation bar section styling start
 .nav-section {
   padding: 8px 24px;
@@ -98,13 +105,7 @@ $font-family-sans-serif: "Sora", sans-serif;
       span {
         font-size: 48px;
       }
-      .stroke-text {
-        color: transparent;
-        -webkit-text-stroke: #000 1.5px;
-        font-size: 56px;
-        font-weight: bold;
-        letter-spacing: -2px;
-      }
+
       .para {
         margin-top: 32px;
         color: #71717a;
@@ -124,9 +125,7 @@ $font-family-sans-serif: "Sora", sans-serif;
         color: #000;
         font-size: 20px;
         &:hover {
-          background: #000;
-          color: #fff;
-          transition: all 0.2s ease-in-out;
+          @include dark-hover;
         }
       }
     }
@@ -339,6 +338,90 @@ $font-family-sans-serif: "Sora", sans-serif;
           line-height: 20px;
         }
       }
+    }
+  }
+}
+// contact section styling
+.contact-section {
+  margin-top: 32px;
+  padding: 42px 22px;
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  gap: 120px;
+  .contact-form-area > .input-group > .input-item {
+    margin-top: 12px;
+    width: 100%;
+    input,
+    textarea {
+      padding: 18px 26px;
+      width: 100%;
+      resize: none;
+      border: #a8a8bf 1px solid;
+      border-radius: 4px;
+      &::placeholder {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #71717a;
+      }
+      &:focus {
+        outline: none;
+        border: #71717a 1px solid;
+      }
+    }
+  }
+  .contact-form-area > .button-group {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 42px;
+    .get-in-touch {
+      padding: 15px 18px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      background: #000;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    .icon {
+      padding: 12px 18px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      color: #000;
+      font-size: 20px;
+      &:hover {
+        @include dark-hover;
+      }
+    }
+  }
+  .contact-text-area {
+    h3 {
+      color: #000;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 56px;
+      .stroke-text {
+        margin: 0 5px;
+        font-size: 48px;
+      }
+    }
+    p {
+      margin: 16px 0;
+      color: #71717a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    h4 {
+      margin-top: 52px;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
     }
   }
 }

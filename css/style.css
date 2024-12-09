@@ -9,6 +9,14 @@
   text-decoration: none;
 }
 
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: #000 1.5px;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
 .nav-section {
   padding: 8px 24px;
 }
@@ -54,13 +62,6 @@
 }
 .hero-section .text-area .texts span {
   font-size: 48px;
-}
-.hero-section .text-area .texts .stroke-text {
-  color: transparent;
-  -webkit-text-stroke: #000 1.5px;
-  font-size: 56px;
-  font-weight: bold;
-  letter-spacing: -2px;
 }
 .hero-section .text-area .texts .para {
   margin-top: 32px;
@@ -334,6 +335,90 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+}
+
+.contact-section {
+  margin-top: 32px;
+  padding: 42px 22px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.contact-section .contact-form-area > .input-group > .input-item {
+  margin-top: 12px;
+  width: 100%;
+}
+.contact-section .contact-form-area > .input-group > .input-item input,
+.contact-section .contact-form-area > .input-group > .input-item textarea {
+  padding: 18px 26px;
+  width: 100%;
+  resize: none;
+  border: #a8a8bf 1px solid;
+  border-radius: 4px;
+}
+.contact-section .contact-form-area > .input-group > .input-item input::placeholder,
+.contact-section .contact-form-area > .input-group > .input-item textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #71717a;
+}
+.contact-section .contact-form-area > .input-group > .input-item input:focus,
+.contact-section .contact-form-area > .input-group > .input-item textarea:focus {
+  outline: none;
+  border: #71717a 1px solid;
+}
+.contact-section .contact-form-area > .button-group {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-section .contact-form-area > .button-group .get-in-touch {
+  padding: 15px 18px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+.contact-section .contact-form-area > .button-group .icon {
+  padding: 12px 18px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  color: #000;
+  font-size: 20px;
+}
+.contact-section .contact-form-area > .button-group .icon:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.contact-section .contact-text-area h3, .contact-section .contact-text-area .h3 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+}
+.contact-section .contact-text-area h3 .stroke-text, .contact-section .contact-text-area .h3 .stroke-text {
+  margin: 0 5px;
+  font-size: 48px;
+}
+.contact-section .contact-text-area p {
+  margin: 16px 0;
+  color: #71717a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact-section .contact-text-area h4, .contact-section .contact-text-area .h4 {
+  margin-top: 52px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
 }
 
 footer {
