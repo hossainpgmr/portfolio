@@ -9,27 +9,56 @@
     display: flex;
     justify-content: center;
   }
-  .simple-text,
-  .bolder-text,
-  .stroke-text {
-    font-size: 27px;
-    line-height: 32px;
-  }
-  .stroke-text {
-    letter-spacing: 2px;
+  .similar-heading {
+    font-size: 32px !important ;
   }
   .hero-section {
     padding: 0px;
     flex-direction: column;
     .text-area {
       order: 2;
+      .texts {
+        .simple-text,
+        .bolder-text,
+        .stroke-text {
+          font-size: 27px;
+          line-height: 32px;
+        }
+        .stroke-text {
+          letter-spacing: 2px;
+        }
+      }
     }
     .img-area {
-      margin:48px 0;
+      margin: 48px 0;
       order: 1;
       width: 100%;
       img {
         width: 100%;
+      }
+    }
+  }
+  .skills-section {
+    margin-top: 48px;
+    padding: 0;
+    .skill-items {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 0;
+      .skill-item {
+        padding: 32px;
+      }
+    }
+  }
+  .experience-section {
+    .experience-items {
+      padding: 0;
+    }
+    .experience-org > .org-headings {
+      flex-direction: column;
+      gap: 22px;
+      .org-heading > h3 {
+        font-size: 20px !important;
       }
     }
   }

@@ -191,6 +191,9 @@
 }
 .experience-section .experience-items .experience-org .org-headings .org-heading h3, .experience-section .experience-items .experience-org .org-headings .org-heading .h3 {
   color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
 }
 .experience-section .experience-items .experience-org.para {
   font-size: 16px;
@@ -452,14 +455,8 @@ footer .footer-section {
     display: flex;
     justify-content: center;
   }
-  .simple-text,
-  .bolder-text,
-  .stroke-text {
-    font-size: 27px;
-    line-height: 32px;
-  }
-  .stroke-text {
-    letter-spacing: 2px;
+  .similar-heading {
+    font-size: 32px !important;
   }
   .hero-section {
     padding: 0px;
@@ -468,6 +465,15 @@ footer .footer-section {
   .hero-section .text-area {
     order: 2;
   }
+  .hero-section .text-area .texts .simple-text,
+  .hero-section .text-area .texts .bolder-text,
+  .hero-section .text-area .texts .stroke-text {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .hero-section .text-area .texts .stroke-text {
+    letter-spacing: 2px;
+  }
   .hero-section .img-area {
     margin: 48px 0;
     order: 1;
@@ -475,6 +481,28 @@ footer .footer-section {
   }
   .hero-section .img-area img {
     width: 100%;
+  }
+  .skills-section {
+    margin-top: 48px;
+    padding: 0;
+  }
+  .skills-section .skill-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0;
+  }
+  .skills-section .skill-items .skill-item {
+    padding: 32px;
+  }
+  .experience-section .experience-items {
+    padding: 0;
+  }
+  .experience-section .experience-org > .org-headings {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .experience-section .experience-org > .org-headings .org-heading > h3, .experience-section .experience-org > .org-headings .org-heading > .h3 {
+    font-size: 20px !important;
   }
 }
 /*!
