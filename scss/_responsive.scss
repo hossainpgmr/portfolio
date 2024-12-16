@@ -5,25 +5,31 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .simple-text,
+  .bolder-text,
+  .stroke-text {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .stroke-text {
+    letter-spacing: 2px;
+  }
   .hero-section {
     padding: 0px;
+    flex-direction: column;
     .text-area {
-      .texts {
-        h3 {
-          display: inline-block;
-          font-size: 22px;
-          span {
-            font-size: 26px;
-          }
-        }
-      }
+      order: 2;
     }
     .img-area {
-      object-fit: cover;
+      margin:48px 0;
+      order: 1;
+      width: 100%;
       img {
-        width: 363px;
-        height: 335px;
+        width: 100%;
       }
     }
   }
