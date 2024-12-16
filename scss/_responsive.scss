@@ -1,0 +1,30 @@
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hero-section {
+    padding: 0px;
+    .text-area {
+      .texts {
+        h3 {
+          display: inline-block;
+          font-size: 22px;
+          span {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    .img-area {
+      object-fit: cover;
+      img {
+        width: 363px;
+        height: 335px;
+      }
+    }
+  }
+}

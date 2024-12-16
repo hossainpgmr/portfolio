@@ -56,6 +56,18 @@ $font-family-sans-serif: "Sora", sans-serif;
   font-weight: bold;
   letter-spacing: -2px;
 }
+.simple-text {
+  margin-bottom: 12px;
+  display: block;
+  color: #000;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+}
+.bolder-text {
+  display: inline-block;
+  font-weight: 800;
+}
 // navigation bar section styling start
 .nav-section {
   padding: 8px 24px;
@@ -93,19 +105,8 @@ $font-family-sans-serif: "Sora", sans-serif;
   padding: 42px;
   display: flex;
   align-items: end;
-  // gap: 16px;
   .text-area {
     .texts {
-      h3 {
-        color: #000;
-        font-size: 44px;
-        font-weight: 400;
-        line-height: 56px;
-      }
-      span {
-        font-size: 48px;
-      }
-
       .para {
         margin-top: 32px;
         color: #71717a;
@@ -132,8 +133,7 @@ $font-family-sans-serif: "Sora", sans-serif;
   }
   .img-area {
     flex: 1;
-    width: 600px;
-    height: 600px;
+    width: 550px;
   }
 }
 // skills section area styling
@@ -437,5 +437,8 @@ footer {
     align-items: center;
   }
 }
+// component imported
+@import "responsive";
+
 // bootstrap node modules
 @import "../node_modules/bootstrap/scss/bootstrap";
