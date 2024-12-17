@@ -460,7 +460,7 @@ footer .footer-section {
   align-items: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   body {
     width: 100%;
     margin: 0;
@@ -568,7 +568,7 @@ footer .footer-section {
     font-size: 16px;
   }
   footer {
-    padding: 22px 0;
+    padding: 24px 0;
   }
   footer .footer-section > p {
     font-size: 12px;
