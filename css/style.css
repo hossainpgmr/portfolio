@@ -512,6 +512,26 @@ footer .footer-section {
   .about-section .about-img img {
     width: 100%;
   }
+  .project-section .project-item {
+    flex-direction: column;
+  }
+  .project-section .project-item .img-area img {
+    width: 100%;
+  }
+  .project-section .project-item .text-area > .numbar {
+    font-size: 24px !important;
+  }
+  .project-section .project-item .text-area > h3, .project-section .project-item .text-area > .h3 {
+    font-size: 20px !important;
+    padding: 0;
+    margin-top: 0 !important;
+  }
+  .project-section .project-item .item-para {
+    order: 2;
+  }
+  .project-section .project-item .item-img {
+    order: 1;
+  }
 }
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
