@@ -96,4 +96,31 @@
       }
     }
   }
+  .testmonial-section {
+    .testmonial-cards {
+      flex-direction: column;
+      .card-item {
+        padding: 24px !important;
+        .text-area::after {
+          right: 55px !important;
+        }
+      }
+    }
+  }
+  .contact-section {
+    flex-direction: column;
+    .contact-form-area > .button-group {
+      flex-direction: column;
+      align-items: start;
+      .get-in-touch > .get-in-btn {
+        font-size: 16px;
+      }
+    }
+  }
+  footer {
+    padding: 22px 0;
+    .footer-section > p {
+      font-size: 12px;
+    }
+  }
 }

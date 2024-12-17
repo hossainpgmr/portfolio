@@ -300,6 +300,16 @@ $font-family-sans-serif: "Sora", sans-serif;
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       border-radius: 20px;
       position: relative;
+      &:hover {
+        @include dark-hover;
+        .text-area > p {
+          color: #fff;
+        }
+        .designer-name > h4 {
+          color: #f4f4f4;
+        }
+      }
+
       .img-area {
         display: inline-block;
         position: relative;
@@ -379,28 +389,34 @@ $font-family-sans-serif: "Sora", sans-serif;
   .contact-form-area > .button-group {
     padding-top: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    // gap: 42px;
+    gap: 42px;
     .get-in-touch {
-      padding: 15px 18px;
-      border: 2px solid #000;
-      border-radius: 4px;
-      background: #000;
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 24px;
-      text-decoration: none;
+      .get-in-btn {
+        padding: 15px 18px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        background: #000;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-decoration: none;
+      }
     }
-    .icon {
-      padding: 12px 18px;
-      border: 2px solid #000;
-      border-radius: 4px;
-      color: #000;
-      font-size: 20px;
-      &:hover {
-        @include dark-hover;
+    .icons {
+      display: flex;
+      gap: 32px;
+      .icon {
+        padding: 12px 18px;
+        border: 2px solid #000;
+        border-radius: 4px;
+        color: #000;
+        font-size: 20px;
+        text-decoration: none;
+        &:hover {
+          @include dark-hover;
+        }
       }
     }
   }

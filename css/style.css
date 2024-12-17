@@ -306,6 +306,17 @@
   border-radius: 20px;
   position: relative;
 }
+.testmonial-section .testmonial-cards .card-item:hover {
+  background: #000;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.testmonial-section .testmonial-cards .card-item:hover .text-area > p {
+  color: #fff;
+}
+.testmonial-section .testmonial-cards .card-item:hover .designer-name > h4, .testmonial-section .testmonial-cards .card-item:hover .designer-name > .h4 {
+  color: #f4f4f4;
+}
 .testmonial-section .testmonial-cards .card-item .img-area {
   display: inline-block;
   position: relative;
@@ -382,10 +393,10 @@
 .contact-section .contact-form-area > .button-group {
   padding-top: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 42px;
 }
-.contact-section .contact-form-area > .button-group .get-in-touch {
+.contact-section .contact-form-area > .button-group .get-in-touch .get-in-btn {
   padding: 15px 18px;
   border: 2px solid #000;
   border-radius: 4px;
@@ -396,14 +407,19 @@
   line-height: 24px;
   text-decoration: none;
 }
-.contact-section .contact-form-area > .button-group .icon {
+.contact-section .contact-form-area > .button-group .icons {
+  display: flex;
+  gap: 32px;
+}
+.contact-section .contact-form-area > .button-group .icons .icon {
   padding: 12px 18px;
   border: 2px solid #000;
   border-radius: 4px;
   color: #000;
   font-size: 20px;
+  text-decoration: none;
 }
-.contact-section .contact-form-area > .button-group .icon:hover {
+.contact-section .contact-form-area > .button-group .icons .icon:hover {
   background: #000;
   color: #fff;
   transition: all 0.2s ease-in-out;
@@ -531,6 +547,31 @@ footer .footer-section {
   }
   .project-section .project-item .item-img {
     order: 1;
+  }
+  .testmonial-section .testmonial-cards {
+    flex-direction: column;
+  }
+  .testmonial-section .testmonial-cards .card-item {
+    padding: 24px !important;
+  }
+  .testmonial-section .testmonial-cards .card-item .text-area::after {
+    right: 55px !important;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-section .contact-form-area > .button-group {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact-section .contact-form-area > .button-group .get-in-touch > .get-in-btn {
+    font-size: 16px;
+  }
+  footer {
+    padding: 22px 0;
+  }
+  footer .footer-section > p {
+    font-size: 12px;
   }
 }
 /*!
