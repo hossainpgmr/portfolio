@@ -504,6 +504,14 @@ footer .footer-section {
   .experience-section .experience-org > .org-headings .org-heading > h3, .experience-section .experience-org > .org-headings .org-heading > .h3 {
     font-size: 20px !important;
   }
+  .about-section {
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .about-section .about-img img {
+    width: 100%;
+  }
 }
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
